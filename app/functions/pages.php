@@ -11,3 +11,4 @@ function load() {
 
     return $page;
 }
+
