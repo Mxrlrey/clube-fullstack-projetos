@@ -2,44 +2,35 @@
 
 function validate(array $fields) {
     $validate = [];
+    $request = request();
 
     foreach ($fields as $field => $type) {
-        $request = request();
+        $value = isset($request[$field]) ? $request[$field] : null;
+
         switch ($type) {
             case 's':
-                $validate[$field] = filter_var($request[$field], FILTER_SANITIZE_STRING);
+                $validate[$field] = filter_var($value, FILTER_SANITIZE_SPECIAL_CHARS);
                 break;
-        }
-
-        switch ($type) {
             case 'i':
-                $validate[$field] = filter_var($request[$field], FILTER_SANITIZE_NUMBER_INT);
+                $validate[$field] = filter_var($value, FILTER_SANITIZE_NUMBER_INT);
                 break;
-        }
-
-        switch ($type) {
             case 'e':
-                $validate[$field] = filter_var($request[$field], FILTER_SANITIZE_EMAIL);
+                $validate[$field] = filter_var($value, FILTER_SANITIZE_EMAIL);
                 break;
+            default:
+                $validate[$field] = $value;
         }
-
     }
 
     return (object) $validate;
-
 }
 
-function isEmpty(){
-
+function isEmpty() {
     $request = request();
-    $empty = false;
-
-    foreach ($request as $key => $value){
-        if(empty($request[$key])){
-        $empty = true;
+    foreach ($request as $value){
+        if (empty($value)) {
+            return true;
         }
     }
-
-    return $empty;
+    return false;
 }
-
