@@ -20,5 +20,6 @@ function redirect($target){
 }
 
 function redirectToHome(){
-    return header("location:/");
+    header("location:/");
+    exit;
 }

@@ -1,7 +1,7 @@
 <?=get('message');?>
 
 <form action="/pages/forms/create_user.php" method="POST" role="form">
-    <legend>Form title</legend>
+    <legend>Cadastro de Usuário</legend>
 
     <div class="form-group">
         <label for="">Nome</label>
@@ -15,7 +15,7 @@
 
     <div class="form-group">
         <label for="">E-mail</label>
-        <input type="text" class="form-control" name="email" placeholder="Input field">
+        <input type="email" class="form-control" name="email" placeholder="Input field">
     </div>
 
     <div class="form-group">

@@ -1,22 +1,22 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+
 function send(array $data) {
-    $email = new PHPMailer\PHPMailer\PHPMailer;
-    $email->CharSet = 'UTF-8';
-    $email->SMTPSecure = 'plain';
-    $email->isSMTP();
-    $email->Host = 'smtp.mailtrap.io';
-    $email->Port = 465;
-    $email->SMTPAuth = true;
-    $email->Username = '3ad7fc8ad98a63';
-    $email->Password ='1eefea9c139ae9';
-    $email->isHTML(true);
-    $email->setFrom('mxrlrey@gmail.com');
-    $email->FromName = $data['quem'];
-    $email->addAddress($data['para']);
-    $email->Body = $data[ 'mensagem' ];
-    $email->Subject = $data['assunto'];
-    $email->AltBody = 'Para ver esse email tenha certeza de estar vendo em um programa que aceita ver HTML';
-    $email->MsgHTML($data['mensagem']);
-    return $email->send();
+    $mail = new PHPMailer(true);
+    $mail->CharSet = 'UTF-8';
+    $mail->isSMTP();
+    $mail->Host = 'smtp.mailtrap.io';
+    $mail->Port = 2525;
+    $mail->SMTPAuth = true;
+
+    $mail->Username = 'f3f9574efbd8f9';
+    $mail->Password = '073976212b6167';
+
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->setFrom($data['quem']);
+    $mail->addAddress($data['para']);
+    $mail->Subject = $data['assunto'];
+    $mail->MsgHTML($data['mensagem']);
+    return $mail->send();
 }

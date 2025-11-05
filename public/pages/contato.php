@@ -1,4 +1,4 @@
-<h2>Contato</h2>
+<h2>Suporte</h2>
 
 <?= get('message'); ?>
 
@@ -11,7 +11,7 @@
 
     <div class="form-group">
         <label for="">Email</label>
-        <input type="text" class="form-control" name="email" placeholder="Digite seu email">
+        <input type="email" class="form-control" name="email" placeholder="Digite seu email">
     </div>
 
     <div class="form-group">
@@ -24,5 +24,5 @@
         <textarea name="message" cols="30" rows="10" class="form-control"></textarea>
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
