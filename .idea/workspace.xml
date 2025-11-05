@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33899e84-a8c2-4f59-81da-001ac2ac5388" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/pages/delete_user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/pages/edit_user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/pages/forms/update_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/46380710-11da-40b8-a427-7605ac365d56.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/46380710-11da-40b8-a427-7605ac365d56.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/functions/custom.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/functions/custom.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/functions/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/functions/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/functions/email.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/functions/email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/functions/pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/functions/pages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/contato.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/pages/contato.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/create_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/pages/create_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/pages/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +132,7 @@
       <workItem from="1759945291530" duration="96000" />
       <workItem from="1761588905514" duration="11070000" />
       <workItem from="1761613748942" duration="203000" />
-      <workItem from="1762346459347" duration="19276000" />
+      <workItem from="1762346459347" duration="20059000" />
     </task>
     <servers />
   </component>

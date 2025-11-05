@@ -10,8 +10,8 @@ function send(array $data) {
     $mail->Port = 2525;
     $mail->SMTPAuth = true;
 
-    $mail->Username = 'f3f9574efbd8f9';
-    $mail->Password = '073976212b6167';
+    $mail->Username = 'COLOQUE_SEU_USERNAME_DO_MAILTRAP_AQUI';
+    $mail->Password = 'COLOQUE_SEU_PASSWORD_DO_MAILTRAP_AQUI';
 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->setFrom($data['quem']);
