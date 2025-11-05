@@ -60,7 +60,7 @@ docker run --rm -v "$(pwd)":/app -w /app composer install
 ---
 ### 3️⃣ Subir os containers Docker
 ```bash
-docker compose -f dockercompose.yml up --build -d
+docker compose -f docker-compose.yml up --build -d
 ```
 Verifique se está rodando:
 ```bash
