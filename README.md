@@ -1,7 +1,7 @@
-# 🧩 Sistema CRUD de Usuários + Formulário de Contato (Docker + Mailtrap)
+# 🧩 Sistema CRUD de Usuários + Formulário de Suporte (Docker + Mailtrap)
 
 Olá meu nome é Marley.  
-Aqui está tudo o que você precisa saber para rodar o sistema localmente, configurar o Mailtrap para testar o envio de e-mails (sandbox) e utilizar o CRUD de usuários e o formulário de contato.  
+Aqui está tudo o que você precisa saber para rodar o sistema localmente, configurar o Mailtrap para testar o envio de e-mails (sandbox) e utilizar o CRUD de usuários e o formulário de suporte.  
 Siga os passos abaixo com calma para não ter problemas.
 
 > 🔗 **Repositório:** [https://github.com/Mxrlrey/clube-fullstack-projetos.git](https://github.com/Mxrlrey/clube-fullstack-projetos.git)
@@ -9,7 +9,7 @@ Siga os passos abaixo com calma para não ter problemas.
 ---
 
 ## 🚀 O que este projeto faz
-Este repositório contém um **sistema CRUD de usuários** e um **formulário de contato funcional**, que envia e-mails via SMTP usando **PHPMailer** e **Mailtrap**.  
+Este repositório contém um **sistema CRUD de usuários** e um **formulário de suporte funcional**, que envia e-mails via SMTP usando **PHPMailer** e **Mailtrap**.  
 Tudo roda em um ambiente **Docker (PHP + MySQL)** configurado para execução local de forma simples e rápida.
 
 ---
@@ -167,7 +167,7 @@ $mail->Password = 'COLOQUE_SEU_PASSWORD_DO_MAILTRAP_AQUI'; // Substitua pela sua
 | `/` | Lista todos os usuários cadastrados                               |
 | `?page=create_user` | Formulário para cadastrar um novo usuário                         |
 | `?page=contato` | Formulário de Suporte com envio via Mailtrap                      |
-| `Navbar → Suporte` | Acesso rápido à página de contato                                   |
+| `Navbar → Suporte` | Acesso rápido à página de suporte                                  |
 ---
 ## ⚠️ Problemas comuns e soluções
 | Problema                         | Solução                                      |
