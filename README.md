@@ -25,7 +25,7 @@ Antes de iniciar, você precisa ter instalado:
 ## 📁 Estrutura importante do projeto
 | Caminho | Descrição |
 |----------|------------|
-| `dockercompose.yml` | Configuração dos containers (PHP + MySQL) |
+| `docker-compose.yml` | Configuração dos containers (PHP + MySQL) |
 | `Dockerfile` | Imagem PHP que serve o diretório `/public` |
 | `composer.json` | Dependências (PHPMailer, PDO) |
 | `bootstrap.php` | Inicialização do app e autoload |
